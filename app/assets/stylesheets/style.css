@@ -211,10 +211,11 @@ header{
  	padding-top: 10px;
 
 }
- .whatmadeform{
+
+.whatmadeform{
  	text-align: center;
  	margin-bottom: 85px;
- 	 }
+}
 
  #form{
  	margin-bottom: 60px;
@@ -383,7 +384,7 @@ margin-bottom: -30px;
 .myposts{
 	margin-top: 0px;
 	padding-bottom: 30px;
-	}
+}
 
 .editAccount{
 	line-height: 1.7;
@@ -610,4 +611,5 @@ display: none;
 
 .aboutCopy{
 	width: 100%;
+}
 }

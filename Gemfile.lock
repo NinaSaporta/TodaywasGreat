@@ -93,6 +93,9 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    mailchimp-api (2.0.4)
+      excon (>= 0.16.0)
+      json (>= 1.7.7)
     method_source (0.8.2)
     mime-types (1.25.1)
     minitest (5.3.3)
@@ -181,6 +184,7 @@ DEPENDENCIES
   heroku
   jbuilder (~> 2.0)
   jquery-rails
+  mailchimp-api (~> 2.0.4)
   paperclip!
   pry
   rails (= 4.1.1)

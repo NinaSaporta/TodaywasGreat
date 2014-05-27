@@ -4,9 +4,14 @@
 	box-sizing: border-box;       
 }
 
+@font-face{ 
+	font-family: Young; src: url('Young.ttf'); 
+	font-family: coolvetica; src: url('coolvetica rg.ttf');
+} 
+
 
 body{
-	font-family: 'young', sans-serif;
+	font-family: 'Young', sans-serif;
 	color: #3e3f3f;
 	background-image:url("/images/diamondbackground2.svg");
 	background-size: cover;
@@ -15,7 +20,7 @@ body{
 
 
 .pagesBody{
-	font-family: "youth", sans-serif;
+	font-family: 'Young', sans-serif;
 }
 
 a{
@@ -74,7 +79,7 @@ header{
 	display: inline;
 	line-height: 1.4;
 	font-size: 1.3em;
-	font-family: 'young', sans-serif;
+	font-family: 'Young', sans-serif;
 		/*
 	width: 10%;
 	padding: 10px; */
@@ -96,7 +101,7 @@ header{
 	display: inline;
 	line-height: 1.4;
 	font-size: 1.3em;
-	font-family: 'young', sans-serif;
+	font-family: 'Young', sans-serif;
 		/*
 	width: 10%;
 	padding: 10px; */
@@ -141,6 +146,10 @@ header{
 
 .navMenuMargin{
 	margin-top: 10px;
+}
+
+.navMenuMargin{
+	margin-top: 3%;
 }
 
 .fb{
@@ -202,7 +211,17 @@ header{
    font-size: 20px;
    padding: 20px;
    margin-top: 70px;
-   margin-bottom: 30px;
+   margin-bottom: 18px;
+ }
+
+ .whatmadeform form input[type='submit'] {
+ 	width: 25%;
+ 	border: 5px solid #fdf634;
+ 	background-color: #e7e7e4;
+ 	font-size: 1.3em;
+ 	color: #3e3f3f;
+ 	font-family: 'Young', sans-serif;
+ 	padding-top: 5px;
  }
 
  .whatmadeform span{
@@ -332,7 +351,6 @@ header{
 	color: #fff;
 }
 
-
 .formTitle{
 font-size: 1.4em;
 margin-top: 20px;
@@ -410,7 +428,6 @@ margin-bottom: -30px;
 }
 
 
-
 /* About and Contact Page */
 
 .pagesBody{
@@ -419,7 +436,7 @@ margin-bottom: -30px;
 
 .pagesStyle {
 	margin-top: 20px;
-	font-family: 'youth', sans-serif;
+	font-family: 'Young', sans-serif;
 }
 
 .aboutCopy{
@@ -440,19 +457,19 @@ margin-bottom: -30px;
 
 .aboutCopy h2{
 	margin-left: 5%;
-	font-family: 'young', sans-serif;
+	font-family: 'Young', sans-serif;
 	font-size: 2em;
 	padding-top: 15px;
 }
 
 .aboutCopy p{
-	font-family: 'young', sans-serif;
+	font-family: 'Young', sans-serif;
 	padding: 2% 5% 0 5%;
 	line-height: 1.6;
 }
 
 .contactCopy{
-	font-family: 'young', sans-serif;
+	font-family: 'Young', sans-serif;
 	padding: 0% 5% 0 5%;
 	line-height: 1.6;
 	text-align: center;
@@ -474,10 +491,6 @@ body{
 	background-size: cover;
 }
 
-.userPostsBody{
-	background-size: contain;
-
-}
 
 .twglogo{
 	content:url("/images/twglogo.svg");
@@ -504,7 +517,7 @@ body{
 	display: inline;
 	line-height: 1.4;
 	font-size: 1.3em;
-	font-family: 'young', sans-serif;
+	font-family: 'Young', sans-serif;
 		/*
 	width: 10%;
 	padding: 10px; */
@@ -547,7 +560,7 @@ body{
 	display: inline;
 	line-height: 1.4;
 	font-size: 1.3em;
-	font-family: 'young', sans-serif;
+	font-family: 'Young', sans-serif;
 		/*
 	width: 10%;
 	padding: 10px; */
@@ -572,8 +585,6 @@ display: none;
 	height: 170px;
 	margin-top: 20px;
 	background-color: #fff;
-	border-top: 9px solid #fdf634;
-	border-bottom: 9px solid #fdf634;
 	padding: 5px;
 }
 
@@ -583,8 +594,14 @@ display: none;
    font-size: 20px;
    padding: 20px;
    margin-top: 10px;
-   margin-bottom: 10px;
+   margin-bottom: 20px;
  }
+
+ .whatmadeform form input[type='submit'] {
+ 	width: 200px;
+ 	font-size: 16px;
+ }
+
 
  .whatmadeform span{
  	display: inline;

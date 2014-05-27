@@ -1,0 +1,75 @@
+
+<body>
+    
+   <div class="header">
+      <%= link_to root_path do %> 
+       <div class="twglogo"> 
+       </div>
+    <% end %>
+
+
+    <nav class="nav">
+     <div class="navSquares">
+     </div>
+       <div class="navMenuHide">
+        <ul>
+         <%= link_to root_path do %> 
+          <li> Home
+          </li>
+         <% end %>
+     
+         <%= link_to 'about' do %> 
+          <li> About 
+          </li>
+         <% end %>
+   
+          <%= link_to 'contact' do %> 
+           <li> Contact
+           </li>
+          <% end %>
+
+         <% if @user!=current_user %>
+          <%= link_to "/dashboard/#{current_user.id}" do %>
+           <li>  Dash
+           </li>
+           <% end %> 
+         <% end %> 
+        </ul>
+      </div>
+     </nav>
+    </div>
+
+<h2 class="editpost"> Edit Post! </h2>
+
+<div class= "whatmadeform">
+     <%= form_for @post do |f| %>
+      <p>
+        <%= f.text_field :content %>
+      </p>
+      <!--<p class="btn btn-primary btn-lg"> -->
+      <%= f.submit %></p>
+     <% end %>
+  
+ </div>
+
+ <div class="footer">
+        <ul>
+         <%= link_to "http://www.facebook.com/todaywasgreat" do %> 
+          <li class="fb">
+          </li>
+         <% end %>
+
+          <%= link_to "https://twitter.com/Today_was_great" do %> 
+          <li class="twitter">
+          </li>
+         <% end %>
+
+         <%= link_to "https://instagram.com/todaywasgreat" do %> 
+          <li class="instagram">
+          </li>
+         <% end %>
+        </ul>
+
+      Copyright 2014 :: TodayWasGreat.com  :: Designed and Built by Nina Saporta
+  </div> 
+</body>

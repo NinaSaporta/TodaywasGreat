@@ -1,0 +1,613 @@
+* { 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;   
+	box-sizing: border-box;       
+}
+
+
+body{
+	font-family: 'young', sans-serif;
+	color: #3e3f3f;
+	background-image:url("/images/diamondbackground2.svg");
+	background-size: cover;
+	padding-top: 10px;
+}
+
+
+.pagesBody{
+	font-family: "youth", sans-serif;
+}
+
+a{
+	color: #fdf634;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #00a0a1;
+	text-decoration: none;
+}
+/* Header, Footer and Navbar */
+
+
+header{
+	width: 100%;
+}
+
+.twglogo{
+	content:url("/images/twglogo.svg");
+	width: 45%;
+	margin: 0 auto;
+	transform: scaleY(1) rotate(-8deg);
+	-webkit-transform: scaleY(1) rotate(-8deg);
+	-moz-transform: scaleY(1) rotate(-8deg);
+	margin-top: -5px;
+}
+
+.nav{
+	position: absolute;
+	margin-top: -30%;
+	padding-right: 3%;
+
+}
+
+.navSquares{
+	content:url("/images/navSquares.svg");
+	right: 0;
+	position: fixed;
+	padding-right: 15px;
+}
+
+.navMenuHide{
+	margin-right: 10px;
+	margin-top: 60px;
+	/*background-color:rgba(255, 255, 255, .6);*/
+	right: 0;
+	position: fixed;
+	padding: 10px;
+	text-align: right;
+	display: none;
+}
+
+.navMenuHide ul{
+
+	display: inline;
+	line-height: 1.4;
+	font-size: 1.3em;
+	font-family: 'young', sans-serif;
+		/*
+	width: 10%;
+	padding: 10px; */
+}
+
+.navMenuHidePages{
+	margin-right: 10px;
+	margin-top: 60px;
+	/*background-color:rgba(255, 255, 255, .6);*/
+	right: 0;
+	position: fixed;
+	padding: 10px;
+	text-align: right;
+	display:none;
+}
+
+.navMenuHidePages ul{
+
+	display: inline;
+	line-height: 1.4;
+	font-size: 1.3em;
+	font-family: 'young', sans-serif;
+		/*
+	width: 10%;
+	padding: 10px; */
+}
+
+.navbar{
+	position: absolute;
+	right: 0;
+}
+
+
+.navbar ul li{
+	padding-bottom: 2%;
+}
+
+.nav_home{
+	content:url("/images/nav_home.svg");
+	width: 120px;
+	padding-top: 7%;
+
+}
+
+.nav_about{
+	content:url("/images/nav_about.svg");
+	width: 120px;
+	padding-top: 7%;
+}
+
+
+.nav_contact{
+	content:url("/images/nav_contact.svg");
+	width: 120px;
+	padding-top: 7%;
+
+}
+
+.nav_dash{
+	content:url("/images/nav_dash.svg");
+	width: 120px;
+	padding-top: 7%;
+}
+
+.navMenuMargin{
+	margin-top: 10px;
+}
+
+.fb{
+	content:url("/images/fblogo.svg");
+	width: 8%;
+	text-align: left;
+	padding: 10px 0px 10px 18px;
+	margin-top: -45px;
+}
+
+.instagram{
+	content:url("/images/instagramlogo.svg");
+	width: 8%;
+	text-align: left;
+	padding: 10px 0px 10px 18px;
+	margin-top: -45px;
+}
+
+.twitter{
+	content:url("/images/twitterlogo.svg");
+	width: 8%;
+	text-align: left;
+	padding: 10px 0px 10px 18px;
+	margin-top: -45px;
+}
+
+.footer{
+	width: 100%;
+	background-color: #fdf634;
+	padding: 20px;
+	text-align: center;
+}
+
+.footer ul li{
+	display: inline;
+}
+
+
+/* 'What made your day great?' section */
+
+.whatmadebanner{
+	content:url("/images/whatmadebanner.svg");
+	width: 29%;
+	margin: 0 auto;
+}
+
+.whatmade{
+	width: 100%;
+	height: 225px;
+	background-color: #fff;
+	margin-top: -75px;
+	border-top: 9px solid #fdf634;
+	border-bottom: 9px solid #fdf634;
+}
+
+.whatmadeform form input[type='text'] {
+   width: 70%;
+   height: 100px;
+   font-size: 20px;
+   padding: 20px;
+   margin-top: 70px;
+   margin-bottom: 30px;
+ }
+
+ .whatmadeform span{
+ 	display: none;
+ 	font-size: 1.3em;
+ 	padding-top: 10px;
+
+}
+ .whatmadeform{
+ 	text-align: center;
+ 	margin-bottom: 85px;
+ 	 }
+
+ #form{
+ 	margin-bottom: 60px;
+ }
+
+.error ul{
+	padding: 5px;
+	text-align: left;
+	color: #fff;
+	background: #000;
+}
+
+/* Posts and content within posts */
+
+.posts li{
+	text-align: center;
+	list-style: none;
+	border: 8px double #00a0a1;
+	padding: 40px 0px 15px 0px;
+	width: 60%;
+	margin: 40px auto;
+	background-color: #fff;
+}
+
+ .posts {
+ 	width: 100%;
+ 	padding-bottom: 30px;
+ }
+
+ .postContent{
+ 	font-size: 1.6em;
+ 	font-weight: bolder;
+ 	padding: 0px 5px 5px 5px;
+ }
+
+ .userPagePosts li{
+	padding: 20px 0px 15px 0px;
+
+ }
+
+ .space{
+ 	height: 20px;
+ 	width: 100%;
+ }
+
+.nameLocation{
+	color: #bababa;
+	text-decoration: none;
+}
+
+.nameLocation a{
+	color: #bababa;
+	text-decoration: none;
+}
+
+.nameLocation a:hover{
+	color: #3e3f3f;
+	text-decoration: none;
+}
+
+.editDestroy{
+ 	text-align: center;
+ 	padding-left: 5px;
+ 	margin-top: -30px;
+ }
+
+.editDestroy a{
+ 	color: #fff;
+	text-decoration: none;
+ }
+
+.editDestroy a:hover{
+	color: #3e3f3f;
+	text-decoration: none;
+}
+
+.editpost{
+	text-align: center;
+	font-size: 1.6em;
+	color: #fdf634;
+	margin-top: 20px;
+	padding-top: 30px;
+}
+
+/* Sign up forms */
+
+.newUserForm{
+	margin-bottom: 100px;
+	font-size: 1.3em;
+}
+
+.newUserForm p{
+	padding-top: 10px;
+}
+
+.newPasswordForm{
+	padding-top: 10px;
+}
+
+.errorMessage{
+	color: #fff;
+	padding: 5px;
+	padding-left: 2%;
+	margin-top: 30px;
+}
+
+.loginPage {
+	padding-left: 20px;
+	color: #fff;
+	padding-top: 15px;
+}
+
+.error{
+	color: #fff;
+}
+
+
+.formTitle{
+font-size: 1.4em;
+margin-top: 20px;
+margin-bottom: -30px;
+}
+
+.deviseLinks{
+	margin-left: 3px;
+	padding-top: 15px;
+}
+
+.updateInfo{
+	color: #ba1352;
+}
+
+.updateInfo:hover{
+	color: #fdf634;
+}
+
+/* User Dashboard */
+
+.accountInfo{
+	margin-top: 50px;
+}
+
+.dashboardSection{
+	margin-top: 0px;
+	font-size: 30px;
+	font-weight: bolder;
+	padding: 10px;
+	background-color: #fff;
+	border-top: 9px solid #00a0a1;
+}
+
+
+.dashboardSection:hover{
+	background-color: #fdf634;
+}
+
+.userInfo{
+	padding: 10px;
+	padding-bottom:30px;
+	font-size: 1.3em;
+	line-height: 1.6;
+	background-color:rgba(255, 255, 255, .6);
+	display: none;
+}
+
+.myposts{
+	margin-top: 0px;
+	padding-bottom: 30px;
+	}
+
+.editAccount{
+	line-height: 1.7;
+	margin-bottom: 10%;
+	padding-top: 40px;
+	padding-left: 40px;
+}
+
+.userPosts{
+	padding-bottom: 5%;
+}
+
+.postsSquares{
+	margin-top: -5%;
+}
+
+.notificationsDrop{
+	padding: 30px 10px;
+	font-size: 1.3em;
+	line-height: 1.6;
+	background-color:rgba(255, 255, 255, .6);
+	display: none;
+}
+
+
+
+/* About and Contact Page */
+
+.pagesBody{
+	padding-top: 20px;
+}
+
+.pagesStyle {
+	margin-top: 20px;
+	font-family: 'youth', sans-serif;
+}
+
+.aboutCopy{
+	width: 75%;
+	height: 700px;
+	background-color: rgba(255, 255, 255, .6);
+	margin: 0 auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.aboutCopy h1{
+	font-size: 2em;
+	text-align: center;
+	padding-top: 25px;
+	font-family: 'coolvetica', sans-serif;
+}
+
+.aboutCopy h2{
+	margin-left: 5%;
+	font-family: 'young', sans-serif;
+	font-size: 2em;
+	padding-top: 15px;
+}
+
+.aboutCopy p{
+	font-family: 'young', sans-serif;
+	padding: 2% 5% 0 5%;
+	line-height: 1.6;
+}
+
+.contactCopy{
+	font-family: 'young', sans-serif;
+	padding: 0% 5% 0 5%;
+	line-height: 1.6;
+	text-align: center;
+	width: 75%;
+	margin: 0 auto;
+}
+
+.contactForm{
+	margin-top: 2%;
+	text-align: center;
+	color: #fff;
+}
+
+/* **************** MOBILE CSS STARTS HERE **************** */
+@media only screen and (max-width: 600px){
+
+body{
+	font-family: sans-serif;
+	background-size: cover;
+}
+
+.userPostsBody{
+	background-size: contain;
+
+}
+
+.twglogo{
+	content:url("/images/twglogo.svg");
+	width: 47%;
+	margin-left: 27%;
+	transform: scaleY(1) rotate(0deg);
+	-webkit-transform: scaleY(1) rotate(0deg);
+	-moz-transform: scaleY(1) rotate(0deg);
+	padding-bottom: 10px;
+	margin-top: 3px;
+}
+
+.navMenuHide{
+	margin: 0 auto;
+	right: 50;
+	text-align: center;
+	width: 100%;
+	height: 200px;
+	position: relative;
+}
+
+.navMenuHide ul{
+
+	display: inline;
+	line-height: 1.4;
+	font-size: 1.3em;
+	font-family: 'young', sans-serif;
+		/*
+	width: 10%;
+	padding: 10px; */
+}
+
+.nav{
+	position: relative;
+	width: 100%;
+	margin-top: 0px;
+	margin: 0 auto;
+	text-align: center;
+}
+.navMenuHidePages{
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	height: 200px;
+	position: relative;
+}
+
+.navMenuHide ul li{
+	background-color: #00a0a1;
+	padding: 10px;
+	border: 1px solid #fff;
+}
+
+.navMenuHide ul li:hover{
+	background-color: #ae1d68;
+	color: #fdf634;
+}
+
+.navMenuHidePages ul li{
+	background-color: #00a0a1;
+	padding: 10px;
+	border: 1px solid #fff;
+}
+
+.navMenuHidePages ul{
+
+	display: inline;
+	line-height: 1.4;
+	font-size: 1.3em;
+	font-family: 'young', sans-serif;
+		/*
+	width: 10%;
+	padding: 10px; */
+}
+
+.navMenuHidePages ul li:hover{
+	background-color: #ae1d68;
+	color: #fdf634;
+}
+
+.navSquares{
+	position: absolute;
+	margin-top: -35%;
+}
+
+.whatmadebanner{
+display: none;
+	}
+
+.whatmade{
+	width: 100%;
+	height: 170px;
+	margin-top: 20px;
+	background-color: #fff;
+	border-top: 9px solid #fdf634;
+	border-bottom: 9px solid #fdf634;
+	padding: 5px;
+}
+
+.whatmadeform form input[type='text'] {
+   width: 90%;
+   height: 80px;
+   font-size: 20px;
+   padding: 20px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+ }
+
+ .whatmadeform span{
+ 	display: inline;
+ 	font-size: 1.3em;
+}
+
+.posts li{
+	text-align: center;
+	list-style: none;
+	border: 8px double #00a0a1;
+	padding: 30px 0px 15px 0px;
+	width: 100%;
+	margin: 30px auto;
+	background-color: #fff;
+}
+
+.posts{
+	padding: 0px;
+}
+
+.space{
+	height: 150px;
+}
+
+.aboutCopy{
+	width: 100%;
+}

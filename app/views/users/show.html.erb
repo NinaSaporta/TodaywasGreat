@@ -1,0 +1,113 @@
+
+<body class="userPostsBody">
+
+<div class="userPosts">
+ <div class= "header">
+    <%= link_to root_path do %> 
+   <div class="twglogo"> 
+   </div>
+   <% end %>
+ </div>
+</div>
+
+  <nav class="nav">
+     <div class="navSquares postsSquares">
+     </div>
+       <div class="navMenuHide navMenuMargin">
+        <ul>
+         <%= link_to root_path do %> 
+          <li> Home
+          </li>
+         <% end %>
+     
+         <%= link_to '../about' do %> 
+          <li> About 
+          </li>
+         <% end %>
+   
+          <%= link_to '../contact' do %> 
+           <li> Contact
+           </li>
+          <% end %>
+
+         <% if @user==current_user %>
+          <%= link_to "/dashboard/#{current_user.id}" do %>
+           <li>  Dash
+           </li>
+           <% end %> 
+         <% end %> 
+        </ul>
+      </div>
+     </nav>
+
+
+<% if @user==current_user %>
+    <div class= "accountInfo">
+      <h2 class="dashboardSection"> My Account Information</h2>
+    </div>
+    <div class="userInfo">
+      <p>User name:  <%= @user.name %> </p>
+    
+      <p>Email address:  <%= @user.email %></p>
+      
+      <p>Location:  <%= @user.location %></p>
+
+      <%= link_to '/users/edit' do %> 
+      <p class="updateInfo">Update Account info </p>
+        <% end %>
+    </div>
+    <div class="notifications">
+      <h2 class="dashboardSection"> Notifications</h2>
+   </div>
+    <div class="notificationsDrop">
+    <p>o (checkbox) Receive occasional emails from TodaywasGreat.com<p>
+
+    </div>
+<% end %>
+
+    <div class="myposts">
+      <h2 class="dashboardSection"> <%= @user.name %>'s Posts </h2>
+    </div>
+
+   <div class="mypostsdrop">
+    <div class="posts userPagePosts">
+    <% @user.posts.each do |post| %>
+      <%= render :partial=>'posts/show', :locals=>{:post=>post} %>
+      <% if @user==current_user %>
+        <p class="editDestroy">
+          <%= link_to 'Edit', [:edit, post] %>|
+          <%= link_to 'Delete', post_path(id: post.id, user_id: params[:id]), :method => :delete, :confirm => "Are you sure?" %>
+          <% end %>
+     <% end %>
+       </p>
+     </div> 
+   </div>
+
+   <div class="space">
+   </div>
+
+   <div class="footer">
+        <ul>
+         <%= link_to "http://www.facebook.com/todaywasgreat" do %> 
+          <li class="fb">
+          </li>
+         <% end %>
+
+          <%= link_to "https://twitter.com/Today_was_great" do %> 
+          <li class="twitter">
+          </li>
+         <% end %>
+
+         <%= link_to "https://instagram.com/todaywasgreat" do %> 
+          <li class="instagram">
+          </li>
+         <% end %>
+        </ul>
+
+      Copyright 2014 :: TodayWasGreat.com  :: Designed and Built by Nina Saporta
+  </div> 
+    
+</body>
+
+
+

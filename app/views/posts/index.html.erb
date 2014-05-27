@@ -1,0 +1,102 @@
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="description" content="TodayWasGreat.com is a simple way to be more positive each day.  Share one thing that made your day great.">
+      <meta name="keywords" content="great, day, inspiration, positive">
+  
+    <title>TodayWasGreat.com :: What made YOUR day great?</title>
+
+    
+</head>
+
+<body class="indexBody">
+    
+   <div class="header">
+      <%= link_to root_path do %> 
+       <div class="twglogo"> 
+       </div>
+    <% end %>
+
+
+    <nav class="nav">
+     <div class="navSquares">
+     </div>
+       <div class="navMenuHide">
+        <ul>
+         <%= link_to root_path do %> 
+          <li> Home
+          </li>
+         <% end %>
+     
+         <%= link_to 'about' do %> 
+          <li> About 
+          </li>
+         <% end %>
+   
+          <%= link_to 'contact' do %> 
+           <li> Contact
+           </li>
+          <% end %>
+
+         <% if @user!=current_user %>
+          <%= link_to "/dashboard/#{current_user.id}" do %>
+           <li>  Dash
+           </li>
+           <% end %> 
+         <% end %> 
+        </ul>
+      </div>
+     </nav>
+    </div>
+
+        <div class= "whatmadebanner">
+        </div>
+         
+          <div class="whatmade">
+            <div class="whatmadeform">
+              <span> What made YOUR day great? </span>
+              <%= render :partial=>'form' %>
+            </div>
+          </div>
+      </div>
+       
+     <div class="posts">
+       <ul>
+         <% @posts.each do |post| %>
+           <%= render :partial=>'show', :locals=>{:post=>post} %>
+
+         <% if current_user && current_user.email=="todaywasgreatcom@gmail.com" %>
+         <p class="editDestroy">
+          <%= link_to 'Edit', [:edit, post] %>
+          |
+         
+            <%= link_to 'Delete', post_path(id: post.id, user_id: params[:id]), :method => :delete, :confirm => "Are you sure?" %> <%= link_to root_path do %> 
+            <% end %>
+            
+              <% end %>
+        <% end %>
+       </ul>
+    </div>
+    <div class="footer">
+        <ul>
+         <%= link_to "http://www.facebook.com/todaywasgreat" do %> 
+          <li class="fb">
+          </li>
+         <% end %>
+
+          <%= link_to "https://twitter.com/Today_was_great" do %> 
+          <li class="twitter">
+          </li>
+         <% end %>
+
+         <%= link_to "https://instagram.com/todaywasgreat" do %> 
+          <li class="instagram">
+          </li>
+         <% end %>
+        </ul>
+
+      Copyright 2014 :: TodayWasGreat.com  :: Designed and Built by Nina Saporta
+    </div> 
+  </body>
+</html>
+

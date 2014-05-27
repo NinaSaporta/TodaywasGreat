@@ -1,0 +1,19 @@
+<li>
+    <div class="postContent">
+      <%= post.content %> 
+    </div>
+    <% if post.user.name?  %>
+  
+    <div class="nameLocation">
+    <p>- <%= link_to post.user.name, "/dashboard/#{post.user.id}"%>, <%=post.user.location %> </p>
+    </div>
+
+    <% else %>
+    <p>- Anonymous</p>
+   <% end %>
+
+    
+
+ 
+
+</li>

@@ -1,0 +1,87 @@
+    <div class="loginPage">
+
+    <div class= "header">
+      <%= link_to root_path do %> 
+        <div class="twglogo"> 
+        </div>
+      <% end %>
+  </div>
+
+<nav class="nav">
+     <div class="navSquares">
+     </div>
+       <div class="navMenuHide">
+        <ul>
+         <%= link_to root_path do %> 
+          <li> Home
+          </li>
+         <% end %>
+     
+         <%= link_to '../about' do %> 
+          <li> About 
+          </li>
+         <% end %>
+   
+          <%= link_to '../contact' do %> 
+           <li> Contact
+           </li>
+          <% end %> 
+        </ul>
+      </div>
+     </nav>
+
+
+<%= form_for(resource, :as => resource_name, :url => user_registration_path) do |f| %>
+
+<h2 class= "formTitle">New User Registration</h2>
+
+    <div class="errorMessage">
+      <%= devise_error_messages!  %>
+    </div>
+     
+ <div class="newUserForm">
+     <p> <%= f.label :name, "Name:" %> </p>
+     <p> <%= f.text_field :name  %>  </p>
+     
+     <p> <%= f.label :email, "Email:" %></p>
+     <p>  <%= f.email_field :email  %></p>
+
+     <p>  <%= f.label :location, "Location:" %></p>
+     <p> <%= f.text_field :location  %></p>
+ 
+
+     <p><%= f.label :password, "Password:" %></p>
+     <p> <%= f.password_field :password  %></p>
+ 
+     <p><%= f.label :password_confirmation, "Password confirmation:" %></p>
+     <p><%= f.password_field :password_confirmation  %></p>
+
+   
+      <p> <%= f.submit %></p>
+      <div class="deviseLinks">
+        <%= render "devise/shared/links" %>
+      </div>
+
+  </div>
+  </div>
+ <% end %>
+ <div class="footer">
+        <ul>
+         <%= link_to "http://www.facebook.com/todaywasgreat" do %> 
+          <li class="fb">
+          </li>
+         <% end %>
+
+          <%= link_to "https://twitter.com/Today_was_great" do %> 
+          <li class="twitter">
+          </li>
+         <% end %>
+
+         <%= link_to "https://instagram.com/todaywasgreat" do %> 
+          <li class="instagram">
+          </li>
+         <% end %>
+        </ul>
+
+      Copyright 2014 :: TodayWasGreat.com  :: Designed and Built by Nina Saporta
+  </div> 

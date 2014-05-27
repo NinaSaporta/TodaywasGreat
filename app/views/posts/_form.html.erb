@@ -1,0 +1,22 @@
+<div class="error">
+  <% if @post.errors.any? %>
+    <ul>
+    <% @post.errors.messages.each do |model, error| %>
+  	
+  	<p><%= model.upcase %>: <%= error.first %></p>
+  	
+    <% end %>
+  </div>
+    </ul>
+<% end %>
+
+ <div class= "form">
+     <%= form_for @post do |f| %>
+      <p>
+        <%= f.text_field :content %>
+      </p>
+      <!--<p class="btn btn-primary btn-lg"> -->
+      <%= f.submit %></p>
+     <% end %>
+  
+ </div>

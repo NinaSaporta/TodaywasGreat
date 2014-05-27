@@ -1,0 +1,97 @@
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="description" content="TodayWasGreat.com is a simple way to be more positive each day.  Share one thing that made your day great.">
+      <meta name="keywords" content="great, day, inspiration, positive">
+  
+    <title>TodayWasGreat.com :: What made YOUR day great?</title>
+
+    
+</head>
+
+<link href="/assets/style.css" media="screen" rel="stylesheet" />
+<link href="/assets/reset.css" media="screen" rel="stylesheet" />
+
+
+
+  <body class="pagesBody">
+   
+<div class="header">
+   <%= link_to root_path do %> 
+    <div class="twglogo"> 
+    </div>
+   <% end %>
+
+    <nav class="nav">
+     <div class="navSquares">
+     </div>
+       <div class="navMenuHidePages">
+        <ul>
+         <%= link_to root_path do %> 
+          <li> Home
+          </li>
+         <% end %>
+     
+         <%= link_to 'about' do %> 
+          <li> About 
+          </li>
+         <% end %>
+   
+          <%= link_to 'contact' do %> 
+           <li> Contact
+           </li>
+          <% end %>
+
+         <% if @user!=current_user %>
+          <%= link_to "/dashboard/#{current_user.id}" do %>
+           <li>  Dash
+           </li>
+           <% end %> 
+         <% end %> 
+        </ul>
+      </div>
+     </nav>
+
+  <div class="pagesStyle">
+
+   <div class="aboutCopy">
+     <h1> Contact Us! </h1>
+     <p class="contactCopy">Want to talk about the Today was Great project, elaborate on your post, share why you think this is a great/terrible idea, or just have a good old fashioned conversation?  We’d love to hear from you! Yes, even you.  
+     </p>
+
+     
+    <div class="contactForm">
+	    <a id="foxyform_embed_link_558960" href="http://www.foxyform.com/"></a>
+      <script type="text/javascript">
+	     (function(d, t){
+	     var g = d.createElement(t),
+	         s = d.getElementsByTagName(t)[0];
+	     g.src = "http://www.foxyform.com/js.php?id=558960&sec_hash=e6be9bbed60&width=350px";
+ 	     s.parentNode.insertBefore(g, s);
+	     }(document, "script"));
+     </script>
+	 </div>
+  </div>
+    
+  <div class="footer">
+        <ul>
+         <%= link_to "http://www.facebook.com/todaywasgreat" do %> 
+          <li class="fb">
+          </li>
+         <% end %>
+
+          <%= link_to "https://twitter.com/Today_was_great" do %> 
+          <li class="twitter">
+          </li>
+         <% end %>
+
+         <%= link_to "https://instagram.com/todaywasgreat" do %> 
+          <li class="instagram">
+          </li>
+         <% end %>
+        </ul>
+
+      Copyright 2014 :: TodayWasGreat.com  :: Designed and Built by Nina Saporta
+  </div> 
+</body>
+</html>

@@ -22,7 +22,23 @@ $(document).ready(function(){
     $(".navMenuHide").slideToggle( "slow");
   });
 
-  
+  if (!diamondbackground2.svg) {
+  $('img[src$=".svg"]').each(function() {
+    $(this).attr('src', $(this).attr('src').replace('.svg', '.png'));
+  });
+}
+
+ if (!twglogo.svg) {
+  $('img[src$=".svg"]').each(function() {
+    $(this).attr('src', $(this).attr('src').replace('.svg', '.png'));
+  });
+}
+
+if (!whatmadebanner.svg) {
+  $('img[src$=".svg"]').each(function() {
+    $(this).attr('src', $(this).attr('src').replace('.svg', '.png'));
+  });
+}
 
 
 });

@@ -22,9 +22,14 @@
 body{
 	font-family: 'Young', sans-serif;
 	color: #3e3f3f;
-	background-image:url("/images/diamondbackground2.svg");
+	background: url("/images/diamondbackground2.png") middle center repeat-y;
+	background: url("/images/diamondbackground2.svg") repeat-y, none;
 	background-size: cover;
-	padding-top: 10px;
+	padding-top: 15px;
+	display: inline-block;
+    width: 100%;
+    height: auto;
+    -webkit-transform: translateZ(0);
 }
 
 
@@ -197,6 +202,18 @@ header{
 	display: inline;
 }
 
+.dashfooter{
+	width: 100%;
+	background-color: #fdf634;
+	padding: 20px;
+	text-align: center;
+	margin-bottom: -30%;
+	padding-top: 20px;
+}
+
+.dashfooter ul li{
+	display: inline;
+}
 
 /* 'What made your day great?' section */
 
@@ -326,6 +343,7 @@ header{
 .newUserForm{
 	margin-bottom: 300px;
 	font-size: 1.3em;
+	padding-left: 20px;
 }
 
 .newUserForm p{
@@ -344,7 +362,7 @@ header{
 }
 
 .loginPage {
-	padding-left: 20px;
+	padding-left: 0px;
 	color: #fff;
 	padding-top: 15px;
 }
@@ -354,9 +372,10 @@ header{
 }
 
 .formTitle{
-font-size: 1.4em;
-margin-top: 20px;
-margin-bottom: -30px;
+	font-size: 1.4em;
+	margin-top: 20px;
+	margin-bottom: -30px;
+	padding-left: 20px;
 }
 
 .deviseLinks{
@@ -386,7 +405,6 @@ margin-bottom: -30px;
 	background-color: #fff;
 	border-top: 9px solid #00a0a1;
 }
-
 
 .dashboardSection:hover{
 	background-color: #fdf634;
@@ -610,9 +628,7 @@ display: none;
 	padding: 0px;
 }
 
-.space{
-	height: 250px;
-}
+
 
 .aboutCopy{
 	width: 100%;

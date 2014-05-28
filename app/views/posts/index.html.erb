@@ -9,18 +9,16 @@
     
 </head>
 
-<body class="indexBody">
+<body>
     
    <div class="header">
       <%= link_to root_path do %> 
-       <div class="twglogo"> 
-       </div>
+       <img class="twglogo" src="/images/twglogo.svg"> 
     <% end %>
 
 
     <nav class="nav">
-     <div class="navSquares">
-     </div>
+     <img class="navSquares" src="/images/navSquares.svg">
        <div class="navMenuHide">
         <ul>
          <%= link_to root_path do %> 
@@ -47,18 +45,15 @@
         </ul>
       </div>
      </nav>
+
+    <div class="whatmade">
+      <img class="whatMadeBanner" src="/images/whatmadebanner.svg">
+       <div class="whatmadeform">
+         <%= render :partial=>'form' %>
+       </div>
+    </div>
     </div>
 
-        <div class= "whatmadebanner">
-        </div>
-         
-          <div class="whatmade">
-            <div class="whatmadeform">
-              <span> What made YOUR day great? </span>
-              <%= render :partial=>'form' %>
-            </div>
-          </div>
-      </div>
        
      <div class="posts">
        <ul>

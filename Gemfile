@@ -6,7 +6,7 @@ gem 'heroku'
 #authentication
 gem 'devise'
 #Mailchimp email management API
-gem 'mailchimp-api', '~> 2.0.4'
+gem 'gibbon'
 #Attaching images
 gem 'paperclip', github: 'thoughtbot/paperclip'
 #BCrypt

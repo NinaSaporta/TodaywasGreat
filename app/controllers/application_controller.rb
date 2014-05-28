@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   before_filter :configure_permitted_parameters, if: :devise_controller?
-  before_filter :initialize_mailchimp
+  #before_filter :initialize_mailchimp
   
   protected
 
@@ -16,10 +16,9 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:email, :password, :password_confirmation, :name, :location ) }
   end
 
-  def initialize_mailchimp
-    @mc = Gibbon::API.new("e201544ee220446b4a0d8b17978ae834-us8")
-    #, :id=>"4e96192c69").listSubscribe(:email_address => self.email, :merge_vars => {'FNAME'=>self.first_name, 'LNAME'=>self.last_name}, :email_type => 'html', :double_optin => false, :update_existing => true, :replace_interests => true, :send_welcome => false )
-
-  end
+  # def initialize_mailchimp
+  #   @mc = Gibbon::API.new("e201544ee220446b4a0d8b17978ae834-us8")
+  #   #, :id=>"4e96192c69").listSubscribe(:email_address => self.email, :merge_vars => {'FNAME'=>self.first_name, 'LNAME'=>self.last_name}, :email_type => 'html', :double_optin => false, :update_existing => true, :replace_interests => true, :send_welcome => false )
+  # end
 
 end

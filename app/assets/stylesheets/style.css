@@ -228,14 +228,18 @@ header{
  	background-color: #e7e7e4;
  	font-size: 1.3em;
  	color: #3e3f3f;
- 	margin-top: -10px;
- 	margin-bottom: 20px;
+ 	margin-top: -35px;
+ 	margin-bottom: 15px;
  	font-family: 'Young', sans-serif;
  }
 
 
 .whatmadeform{
  	text-align: center;
+}
+
+.form{
+	margin-bottom: 30px;
 }
 
 .error ul{
@@ -320,7 +324,7 @@ header{
 /* Sign up forms */
 
 .newUserForm{
-	margin-bottom: 100px;
+	margin-bottom: 300px;
 	font-size: 1.3em;
 }
 
@@ -607,7 +611,7 @@ display: none;
 }
 
 .space{
-	height: 150px;
+	height: 250px;
 }
 
 .aboutCopy{

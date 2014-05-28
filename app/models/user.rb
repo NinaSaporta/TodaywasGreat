@@ -11,11 +11,13 @@ class User < ActiveRecord::Base
   after_create :add_to_mailing_list
 
   def add_to_mailing_list
-    #Rails.logger.info("Doing something")
-    @mc.list_subscribe({:id => '39ee7ea464',
-                               :email_address => self.email, 
-                               :merge_vars => {:FNAME => self.name}, 
-                               :double_optin => "false"})  
+    begin
+      @mc = Gibbon::API.new("e201544ee220446b4a0d8b17978ae834-us8")
+      current_list = '39ee7ea464'
+      #Rails.logger.info("Doing something")
+      @mc.lists.subscribe({:id => current_list, :email => {:email => self.email}, :merge_vars => {:FNAME => self.name}, :double_optin => false})
+    rescue
+    end
   end
 
 end

@@ -13,7 +13,7 @@
 body{
 	font-family: 'Young', sans-serif;
 	color: #3e3f3f;
-	background-image:url("/images/diamondbackground2.png");
+	background-image:url("/images/diamondbackground2.svg");
 	background-size: cover;
 	padding-top: 10px;
 }
@@ -488,6 +488,7 @@ margin-bottom: -30px;
 
 body{
 	font-family: sans-serif;
+	background-image:url("/images/diamondbackground2.png");
 	background-size: cover;
 }
 

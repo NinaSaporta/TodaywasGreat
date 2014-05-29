@@ -173,6 +173,10 @@ header{
 	display: inline;
 }
 
+.footer img{
+	width: 70px;
+}
+
 .dashfooter{
 	width: 100%;
 	background-color: #fdf634;
@@ -500,20 +504,8 @@ header{
 body{
 	font-family: sans-serif;
 	background: url("/images/diamondbackgroundm.png") middle center repeat-y;
-
 }
 
-/*
-.twglogo{
-	width: 47%;
-	margin-left: 27%;
-	transform: scaleY(1) rotate(0deg);
-	-webkit-transform: scaleY(1) rotate(0deg);
-	-moz-transform: scaleY(1) rotate(0deg);
-	padding-bottom: 10px;
-	margin-top: 3px;
-}
-*/
 
 .navMenuHide{
 	margin: 0 auto;
@@ -573,9 +565,6 @@ body{
 	line-height: 1.4;
 	font-size: 1.3em;
 	font-family: 'Young', sans-serif;
-		/*
-	width: 10%;
-	padding: 10px; */
 }
 
 .navMenuHidePages ul li:hover{
@@ -586,6 +575,7 @@ body{
 .navSquares{
 	position: absolute;
 	margin-top: -35%;
+	width: 15%;
 }
 
 
@@ -600,10 +590,11 @@ body{
  	margin-top: -35px;
     margin-bottom: 15px;
  }
+
 .whatMadeBanner{
-	width: 29%;
-	margin-left: 35%;
-	margin-top: -3%;
+	width: 50%;
+	margin-left: 25%;
+	margin-top: -7%;
 }
 
 .whatmade{
@@ -611,8 +602,21 @@ body{
 	margin-top: 4%;
 }
 
+::-webkit-input-placeholder {
+   font-size: 16px;
+}
 
+:-moz-placeholder { /* Firefox 18- */
+   font-size: 16px;
+}
 
+::-moz-placeholder {  /* Firefox 19+ */
+   font-size: 16px;
+}
+
+:-ms-input-placeholder {  
+   font-size: 16px;
+}
 
 .posts li{
 	text-align: center;
@@ -628,9 +632,8 @@ body{
 	padding: 0px;
 }
 
-
-
 .aboutCopy{
 	width: 100%;
 }
+
 }

@@ -132,32 +132,6 @@ header{
 	padding-bottom: 2%;
 }
 
-.nav_home{
-	content:url("/images/nav_home.svg");
-	width: 120px;
-	padding-top: 7%;
-
-}
-
-.nav_about{
-	content:url("/images/nav_about.svg");
-	width: 120px;
-	padding-top: 7%;
-}
-
-
-.nav_contact{
-	content:url("/images/nav_contact.svg");
-	width: 120px;
-	padding-top: 7%;
-
-}
-
-.nav_dash{
-	content:url("/images/nav_dash.svg");
-	width: 120px;
-	padding-top: 7%;
-}
 
 .navMenuMargin{
 	margin-top: 10px;
@@ -168,7 +142,6 @@ header{
 }
 
 .fb{
-	content:url("/images/fblogo.svg");
 	width: 8%;
 	text-align: left;
 	padding: 10px 0px 10px 18px;
@@ -176,7 +149,6 @@ header{
 }
 
 .instagram{
-	content:url("/images/instagramlogo.svg");
 	width: 8%;
 	text-align: left;
 	padding: 10px 0px 10px 18px;
@@ -184,7 +156,6 @@ header{
 }
 
 .twitter{
-	content:url("/images/twitterlogo.svg");
 	width: 8%;
 	text-align: left;
 	padding: 10px 0px 10px 18px;
@@ -194,7 +165,7 @@ header{
 .footer{
 	width: 100%;
 	background-color: #fdf634;
-	padding: 20px;
+	padding: 15px;
 	text-align: center;
 }
 
@@ -236,10 +207,11 @@ header{
    width: 70%;
    height: 100px;
    font-size: 20px;
+   padding: 10px;
  }
 
  .whatmadeform form input[type='submit'] {
- 	width: 25%;
+ 	width: 30%;
  	padding: 7px;
  	border: 5px solid #fdf634;
  	background-color: #e7e7e4;
@@ -248,6 +220,7 @@ header{
  	margin-top: -35px;
  	margin-bottom: 15px;
  	font-family: 'Young', sans-serif;
+ 	border-radius: 7px
  }
 
 
@@ -504,7 +477,7 @@ header{
 }
 
 /* **************** MOBILE CSS STARTS HERE **************** */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480){
+@media only screen and (min-width : 320px) and (max-width : 480px){
 
 body{
 	font-family: sans-serif;
@@ -555,7 +528,7 @@ body{
 	margin: 0 auto;
 	text-align: center;
 	width: 100%;
-	height: 200px;
+	height: 150px;
 	position: relative;
 }
 
@@ -596,24 +569,30 @@ body{
 	margin-top: -35%;
 }
 
-.whatmadebanner{
-display: none;
-}
-
 
 .whatmadeform form input[type='text'] {
    width: 90%;
    height: 80px;
-   font-size: 20px;
-   padding: 20px;
-   margin-top: 5px;
-   margin-bottom: 25px;
  }
 
  .whatmadeform form input[type='submit'] {
  	width: 250px;
  	font-size: 16px;
+ 	margin-top: -35px;
+    margin-bottom: 15px;
  }
+.whatMadeBanner{
+	width: 29%;
+	margin-left: 35%;
+	margin-top: -3%;
+}
+
+.whatmade{
+	width: 100%;
+	margin-top: 4%;
+}
+
+
 
 
 .posts li{

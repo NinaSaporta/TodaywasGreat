@@ -1,13 +1,13 @@
-<div class= "header">
+<body>
+   
+   <div class="header">
       <%= link_to root_path do %> 
-        <div class="twglogo"> 
-        </div>
-      <% end %>
-  </div>
-  
-<nav class="nav">
-     <div class="navSquares">
-     </div>
+       <img class="twglogo" src="/images/twglogo.svg"> 
+    <% end %>
+
+
+    <nav class="nav">
+     <img class="navSquares" src="/images/navSquares.svg">
        <div class="navMenuHide">
         <ul>
          <%= link_to root_path do %> 
@@ -15,18 +15,26 @@
           </li>
          <% end %>
      
-         <%= link_to '../about' do %> 
+         <%= link_to 'about' do %> 
           <li> About 
           </li>
          <% end %>
    
-          <%= link_to '../contact' do %> 
+          <%= link_to 'contact' do %> 
            <li> Contact
            </li>
-          <% end %> 
+          <% end %>
+
+         <% if @user!=current_user %>
+          <%= link_to "/dashboard/#{current_user.id}" do %>
+           <li>  Dash
+           </li>
+           <% end %> 
+         <% end %> 
         </ul>
       </div>
      </nav>
+
 
  <div class="loginPage">
  <div class="editAccount">
@@ -72,23 +80,25 @@
 <div class="space">
 </div>
 
+     
  <div class="footer">
-        <ul>
+          <ul>
          <%= link_to "http://www.facebook.com/todaywasgreat" do %> 
-          <li class="fb">
+          <li> <img class="fb" src="/images/fblogo.svg">
           </li>
          <% end %>
 
           <%= link_to "https://twitter.com/Today_was_great" do %> 
-          <li class="twitter">
+          <li> <img class="twitter" src="/images/twitterlogo.svg">
           </li>
          <% end %>
 
          <%= link_to "https://instagram.com/todaywasgreat" do %> 
-          <li class="instagram">
+          <li> <img class="instagram" src="/images/instagramlogo.svg">
           </li>
          <% end %>
         </ul>
 
       Copyright 2014 :: TodayWasGreat.com  :: Designed and Built by Nina Saporta
   </div> 
+</body>

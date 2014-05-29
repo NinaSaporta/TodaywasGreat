@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   has_many :posts
 
-  validates :name, presence: true
+  #validates :name, presence: true
   validates :location, presence: true
 
   after_create :add_to_mailing_list

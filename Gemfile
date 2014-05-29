@@ -48,7 +48,7 @@ gem 'spring',        group: :development
 # gem 'capistrano-rails', group: :development
 
 # Use debugger
-gem 'pry'
+gem 'pry-rails'
 gem 'better_errors'
 gem 'binding_of_caller'
 

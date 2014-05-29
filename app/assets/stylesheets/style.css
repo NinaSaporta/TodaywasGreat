@@ -404,6 +404,10 @@ header{
 	background-color: #fdf634;
 }
 
+.dashHeader{
+	padding-bottom: 3%;
+}
+
 .userInfo{
 	padding: 10px;
 	padding-bottom:30px;

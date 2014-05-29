@@ -477,7 +477,8 @@ header{
 }
 
 /* **************** MOBILE CSS STARTS HERE **************** */
-@media only screen and (min-width : 320px) and (max-width : 480px){
+
+@media screen and (max-width: 480px) { 
 
 body{
 	font-family: sans-serif;
@@ -524,6 +525,7 @@ body{
 	margin: 0 auto;
 	text-align: center;
 }
+
 .navMenuHidePages{
 	margin: 0 auto;
 	text-align: center;

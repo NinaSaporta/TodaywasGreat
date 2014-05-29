@@ -1,22 +1,19 @@
 <html lang="en">
   <head>
-      <meta name="viewport" content="width=device-width" />
-      <meta charset="utf-8">
-      <meta name="description" content="TodayWasGreat.com is a simple way to be more positive each day.  Share one thing that made your day great.">
-      <meta name="keywords" content="great, day, inspiration, positive">
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8">
+    <meta name="description" content="TodayWasGreat.com is a simple way to be more positive each day.  Share one thing that made your day great.">
+    <meta name="keywords" content="great, day, inspiration, positive">
   
     <title>TodayWasGreat.com :: What made YOUR day great?</title>
-
-    
-</head>
+  </head>
 
 <body>
     
-   <div class="header">
+ <div class="header">
       <%= link_to root_path do %> 
-       <img class="twglogo" src="/images/twglogo.svg"> 
-    <% end %>
-
+        <img class="twglogo" src="/images/twglogo.svg"> 
+      <% end %>
 
     <nav class="nav">
      <img class="navSquares" src="/images/navSquares.svg">
@@ -53,7 +50,7 @@
          <%= render :partial=>'form' %>
        </div>
     </div>
-    </div>
+ </div>
 
        
      <div class="posts">
@@ -65,14 +62,12 @@
          <p class="editDestroy">
           <%= link_to 'Edit', [:edit, post] %>
           |
-         
             <%= link_to 'Delete', post_path(id: post.id, user_id: params[:id]), :method => :delete, :confirm => "Are you sure?" %> <%= link_to root_path do %> 
             <% end %>
-            
-              <% end %>
-        <% end %>
-       </ul>
-    </div>
+            <% end %>
+          <% end %>
+        </ul>
+      </div>
 
    <div class="footer">
         <ul>

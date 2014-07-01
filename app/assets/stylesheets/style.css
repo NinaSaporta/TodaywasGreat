@@ -25,6 +25,7 @@ body{
 	background: url("/images/diamondbackground2.png") middle center repeat-y;
 	background: url("/images/diamondbackground2.svg") repeat-y;
 	background-size: cover;
+	background-repeat:repeat-y;
 	padding-top: 15px;
 	display: inline-block;
     width: 100%;

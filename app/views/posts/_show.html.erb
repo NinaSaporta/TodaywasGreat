@@ -1,8 +1,9 @@
+
 <li>
     <div class="postContent">
       <%= post.content %> 
     </div>
-    <% if post.user.name?  %>
+    <% if post.user %>
   
     <div class="nameLocation">
     <p>- <%= link_to post.user.name, "/dashboard/#{post.user.id}"%>, <%=post.user.location %> </p>
@@ -12,7 +13,15 @@
     <p>- Anonymous</p>
    <% end %>
 
-    
+    <% if @user==current_user %>
+
+    <div class="editDestroy">
+      <%= link_to 'Edit', [:edit, post] %>
+      <%= link_to 'Delete', post, :method => :delete, :confirm => "Are you sure?" %>
+    </div>
+
+    <% end %>
+
 
  
 

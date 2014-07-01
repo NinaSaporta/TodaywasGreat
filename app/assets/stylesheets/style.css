@@ -23,7 +23,7 @@ body{
 	font-family: 'Young', sans-serif;
 	color: #3e3f3f;
 	background: url("/images/diamondbackground2.png") middle center repeat-y;
-	background: url("/images/diamondbackground2.svg") repeat-y, none;
+	background: url("/images/diamondbackground2.svg") repeat-y;
 	background-size: cover;
 	padding-top: 15px;
 	display: inline-block;
